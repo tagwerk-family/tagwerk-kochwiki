@@ -1,0 +1,21 @@
+{
+    "name": "tagwerk/kochwiki",
+    "description": "Koch-Wiki recipes for Tagwerk, mirrored once per server",
+    "type": "library",
+    "version": "0.1.0",
+    "license": "PolyForm-Shield-1.0.0",
+    "require": {
+        "php": "^8.5",
+        "tagwerk/plugin-api": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tagwerk\\Kochwiki\\": "src/"
+        }
+    },
+    "extra": {
+        "tagwerk": {
+            "provider": "Tagwerk\\Kochwiki\\KochwikiServiceProvider"
+        }
+    }
+}
